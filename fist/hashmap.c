@@ -73,6 +73,10 @@ hashmap *hset(hashmap *hm, dstring key, dstring value) {
     return hm;
 }
 
+hashmap *hdelete(hashmap *hm, dstring key) {
+ unsigned int hash_val = 0 
+}
+
 dstringa hget(hashmap *hm, dstring key) {
     unsigned int hash_val = hash(dtext(key));
     hashmap map_array = hm[hash_val];
